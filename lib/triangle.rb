@@ -17,9 +17,10 @@ class Triangle
     elsif left + right + middle == 0
       raise TriangleError
     end
+    class TriangleError < StandardError
+    end
   end
 
-  class TriangleError < StandardError
-  end
+
 
 end
