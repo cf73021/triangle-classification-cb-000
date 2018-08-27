@@ -13,8 +13,6 @@ class Triangle
     elsif left != right && right == middle
       return :isosceles
     end
-
-    end
   end
   class TriangleError < StandardError
 
