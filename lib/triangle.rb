@@ -15,7 +15,7 @@ class Triangle
     elsif left != right && right != middle
       return :scalene
     elsif left == 0 && right == 0 && middle == 0
-      return TriangleError
+      raise TriangleError
     end
   end
   class TriangleError < StandardError
