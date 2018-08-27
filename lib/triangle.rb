@@ -7,6 +7,8 @@ class Triangle
     @middle = middle
   end
 
+  def kind
+  end
   class TriangleError < StandardError
 
   end
