@@ -8,14 +8,14 @@ class Triangle
   end
 
   def kind
+    if left == 0
+      raise TriangleError
     elsif left == right && right == middle
       return :equilateral
     elsif left != right && right == middle || left == right && right != middle || left == middle && right != middle
       return :isosceles
     elsif left != right && right != middle
       return :scalene
-    if left == 0
-      raise TriangleError
     end
   end
 
