@@ -12,7 +12,7 @@ class Triangle
       return :equilateral
     elsif left != right && right == middle || left == right && right != middle || left == middle && right != middle
       return :isosceles
-    elsif left !=right && right != middle
+    elsif left != right && right != middle
       return :scalene
     end
   end
