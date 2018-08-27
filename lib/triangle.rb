@@ -14,12 +14,12 @@ class Triangle
       return :isosceles
     elsif left != right && right != middle
       return :scalene
-    elsif left == 0
+    elsif left + right + middle == 0
       raise TriangleError
     end
   end
 
   class TriangleError < StandardError
   end
-  
+
 end
