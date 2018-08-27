@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    if left == 0 || right == 0 || middle == 0 || left < 0 || right < 0 || middle < 0
+    if left == 0 || right == 0 || middle == 0 || left < 0 || right < 0 || middle < 0 || (left + right) > middle
       raise TriangleError
     elsif left == right && right == middle
       return :equilateral
